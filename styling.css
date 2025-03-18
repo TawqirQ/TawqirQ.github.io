@@ -21,7 +21,7 @@ body, html {
     background: black; /* Fallback background */
 }
 
-/* Ensuring the video covers the full screen */
+/* Ensuring the video fully covers the screen */
 .video-container video {
     position: absolute;
     top: 50%;
@@ -73,6 +73,11 @@ nav a:hover {
     text-align: center;
     padding: 20px;
     background: transparent; /* Make sure there's no background blocking */
+}
+
+/* Adjustments to prevent navbar overlap */
+.content {
+    padding-top: 80px; /* Ensure content doesn’t hide under the navbar */
 }
 
 /* Specific fix for header to avoid overlap with the navbar */
