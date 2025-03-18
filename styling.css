@@ -59,7 +59,7 @@ nav a:hover {
 
 /* Section styling */
 .section {
-    margin: 120px auto 20px auto; /* Ensure margin from top and bottom */
+    margin: 80px auto 20px auto; /* Reduced top margin to 80px */
     padding: 20px;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent to let video show */
     border-radius: 8px;
