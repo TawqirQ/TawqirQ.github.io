@@ -7,7 +7,6 @@ body, html {
     font-family: Arial, sans-serif;
     background: black;
     color: white;
-    overflow-x: hidden; /* Prevent horizontal scrollbars */
 }
 
 /* Video background container */
@@ -64,6 +63,8 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     width: 80%;
+    position: relative; /* Added relative positioning */
+    z-index: 1; /* Added z-index */
 }
 
 /* Ensure content appears above video background */
@@ -71,7 +72,7 @@ nav a:hover {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: 100px 20px 20px 20px;
+    padding-top: 100px; /* Adjusted padding-top */
 }
 
 /* Specific fix for header to avoid overlap with the navbar */
