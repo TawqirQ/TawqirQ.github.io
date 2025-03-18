@@ -17,7 +17,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1;
+    z-index: -1; /* Ensure video is in the background */
     background: black; /* Fallback background */
 }
 
@@ -57,28 +57,28 @@ nav a:hover {
 
 /* Section styling */
 .section {
-    margin: 100px auto;
+    margin: 120px auto 20px auto; /* Ensure margin from top and bottom */
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent so video is visible */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent to let video show */
     border-radius: 8px;
     width: 80%;
 }
 
-/* Ensures text and content appears above the video */
+/* Ensure content appears above video background */
 .content {
     position: relative;
-    z-index: 1; /* Makes sure text is above the video */
+    z-index: 1; /* Ensures text appears above the video */
     text-align: center;
     padding: 20px;
-    background: transparent; /* Ensures background does NOT block video */
+    background: transparent; /* Make sure there's no background blocking */
 }
 
-/* Fix for header section that was black */
+/* Specific fix for header to avoid overlap with the navbar */
 header.section {
-    background: rgba(0, 0, 0, 0.3); /* Slight transparency */
+    background: rgba(0, 0, 0, 0.3); /* Slight transparency to show video */
+    padding: 20px;
 }
 
-/* Additional fix: Make sure content appears from the very top */
 #home {
-    margin-top: 50px; /* Prevent overlap with navbar */
+    margin-top: 80px; /* Adjust margin to avoid overlap with navbar */
 }
