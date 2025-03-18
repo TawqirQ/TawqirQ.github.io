@@ -7,6 +7,7 @@ body, html {
     font-family: Arial, sans-serif;
     background: black;
     color: white;
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
 }
 
 /* Video background container */
@@ -14,22 +15,23 @@ body, html {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw; /* Changed to viewport width */
-    height: 100vh; /* Changed to viewport height */
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     z-index: -1;
-    background: black;
 }
 
 /* Ensuring the video fully covers the screen */
 .video-container video {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures the entire video is visible */
-    background: black; /* Adds black bars if aspect ratio differs */
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
 }
 
 /* Navigation bar */
