@@ -59,7 +59,7 @@ nav a:hover {
 
 /* Section styling */
 .section {
-    margin: 80px auto 20px auto; /* Reduced top margin to 80px */
+    margin: 60px auto 20px auto; /* Further reduced top margin */
     padding: 20px;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent to let video show */
     border-radius: 8px;
@@ -82,10 +82,11 @@ nav a:hover {
 
 /* Specific fix for header to avoid overlap with the navbar */
 header.section {
-    background: rgba(0, 0, 0, 0.3); /* Slight transparency to show video */
+    background: rgba(0, 0, 0, 0.5); /* Same transparency as other sections */
     padding: 20px;
+    margin-top: 60px; /* Added back, but consistent with other sections */
 }
 
 #home {
-    margin-top: 80px; /* Adjust margin to avoid overlap with navbar */
+    margin-top: 0px; /* Removed specific top margin for #home */
 }
