@@ -109,6 +109,30 @@ ul {
     text-align: left;
 }
 
+#skills ul {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+    gap: 10px; /* Adds spacing between skills */
+    padding: 0;
+    justify-content: center;
+}
+
+#skills ul li {
+    list-style: none;
+    padding: 8px 15px;
+    border: 2px solid #ffcc00; /* Gold border */
+    border-radius: 8px; /* Rounded edges */
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 204, 0, 0.2); /* Subtle gold background */
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+#skills ul li:hover {
+    background: rgba(255, 204, 0, 0.4); /* Darker gold on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
 /* Links */
 a {
     color: #ffcc00;
