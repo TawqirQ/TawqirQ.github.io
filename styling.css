@@ -103,6 +103,21 @@ h2 {
     font-weight: normal; /* Less emphasis than the h3 */
 }
 
+#experiences h3 {
+    color: #7fffd4;
+    font-size: 22px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experiences h3 span {
+    font-size: 14px; /* Smaller size */
+    color: #ffffff; /* Keep it readable */
+    font-weight: normal; /* Less emphasis than the h3 */
+}
+
 /* Lists */
 ul {
     list-style-type: square;
